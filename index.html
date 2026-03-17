@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jugal School - Do Good, Be Good. A private co-educational school in Lalitpur, Nepal offering quality education from Playgroup to Secondary.">
+    <title>Jugal School - Do Good, Be Good</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="Jugal_Logo.jpg" alt="Jugal School Logo" class="logo-image">
+                    <!-- <span class="logo-text">Jugal School</span> -->
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#academics" class="nav-link">Academics</a></li>
+                    <li><a href="#admissions" class="nav-link">Admissions</a></li>
+                    <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                    <li><a href="#news" class="nav-link">News</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Jugal School</h1>
+            <p class="hero-subtitle">Do Good, Be Good</p>
+            <p class="hero-description">Empowering students to achieve academic excellence and develop into responsible global citizens</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="smoothScroll('#admissions')">Apply Now</button>
+                <button class="btn btn-secondary" onclick="smoothScroll('#about')">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Quick Highlights -->
+    <section class="highlights">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-number">629</div>
+                    <div class="highlight-label">Students</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-number">1994</div>
+                    <div class="highlight-label">Established</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-number">Award</div>
+                    <div class="highlight-label">PABSON SEE 2080</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-number">30+</div>
+                    <div class="highlight-label">Years Legacy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Jugal School</h2>
+                    <p>Established in 1994 A.D. (2051 B.S.), Jugal School is a private co-educational institution located in Dhapakhel-23, Lalitpur, Nepal. We are committed to nurturing young minds through quality education and holistic development that balances academic excellence with character formation.</p>
+                    <p>Our institution is recognized for its commitment to innovation, cultural values, and student-centric learning methodologies. With our motto "Do Good, Be Good", we believe in creating an environment where every student can discover their potential and become responsible global citizens.</p>
+                </div>
+                <div class="about-mission">
+                    <div class="mission-box">
+                        <h3>Our Mission</h3>
+                        <p>To provide quality education rooted in our motto "Do Good, Be Good" that develops intellectual capability, moral character, and social responsibility in our students.</p>
+                    </div>
+                    <div class="vision-box">
+                        <h3>Our Vision</h3>
+                        <p>To be recognized as a leading educational institution in Lalitpur that produces responsible, ethical, and socially-conscious individuals.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principal-message">
+                <div class="principal-header">
+                    <h3>Principal's Message</h3>
+                </div>
+                <p>"At Jugal School, we believe that education goes beyond academics. We strive to nurture good character alongside intellectual development. Our motto 'Do Good, Be Good' guides every aspect of our educational philosophy. We welcome each student with commitment to their holistic growth and well-being."</p>
+                <p class="principal-signature">— Principal, Jugal School</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="academics">
+        <div class="container">
+            <h2 class="section-title">Academic Programs</h2>
+            <p class="section-subtitle">Comprehensive curriculum designed for holistic development</p>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">🎨</div>
+                    <h3>Playgroup & Pre-school</h3>
+                    <p>Early childhood development through play-based learning. Focus on social, emotional, and cognitive development.</p>
+                    <ul class="program-list">
+                        <li>Language exposure (English & Nepali)</li>
+                        <li>Basic numeracy concepts</li>
+                        <li>Creative play & activities</li>
+                    </ul>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">📚</div>
+                    <h3>Basic Level (Grades 1-8)</h3>
+                    <p>Comprehensive foundational education with emphasis on core academics and character development aligned with our motto.</p>
+                    <ul class="program-list">
+                        <li>English, Nepali, Mathematics, Science</li>
+                        <li>Social Studies & Values Education</li>
+                        <li>Computer Science, Arts & Sports</li>
+                    </ul>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">🎓</div>
+                    <h3>Secondary (Grades 9-10)</h3>
+                    <p>Advanced learning preparing students for national board examinations with emphasis on analytical skills and ethics.</p>
+                    <ul class="program-list">
+                        <li>Science & Social Stream options</li>
+                        <li>Mathematics, English, Nepali</li>
+                        <li>Board exam preparation (SEE)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="teaching-approach">
+                <h3>Our Teaching Approach</h3>
+                <div class="approach-grid">
+                    <div class="approach-item">
+                        <h4>Character-Centered Education</h4>
+                        <p>Every lesson incorporates our motto "Do Good, Be Good", developing students into ethical and responsible individuals.</p>
+                    </div>
+                    <div class="approach-item">
+                        <h4>Student-Centric Learning</h4>
+                        <p>Classes designed with individual learning styles in mind, promoting active participation and collaborative problem-solving.</p>
+                    </div>
+                    <div class="approach-item">
+                        <h4>Practical Application</h4>
+                        <p>Science lab work, library research, and real-world projects make learning engaging and meaningful.</p>
+                    </div>
+                    <div class="approach-item">
+                        <h4>Counseling Support</h4>
+                        <p>Comprehensive counseling services help students with academic guidance, personal development, and emotional well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="admissions">
+        <div class="container">
+            <h2 class="section-title">Admissions</h2>
+            <p class="section-subtitle">Join our community of learners</p>
+            
+            <div class="admission-content">
+                <div class="admission-process">
+                    <h3>Admission Process</h3>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-title">Application Form</div>
+                            <p>Submit the completed application form with supporting documents online or in person.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-title">Assessment</div>
+                            <p>Qualifying students undergo entrance assessment in English, Mathematics, and Reasoning.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-title">Interview</div>
+                            <p>Shortlisted candidates and parents participate in a personal interview with our admission team.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-title">Selection Result</div>
+                            <p>Merit-based selection results are communicated to families with enrollment confirmation details.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admission-requirements">
+                    <h3>Requirements</h3>
+                    <ul class="requirements-list">
+                        <li>Birth Certificate (attested copy)</li>
+                        <li>Previous Academic Record / Transfer Certificate</li>
+                        <li>Medical Certificate (updated immunization)</li>
+                        <li>Two Passport-sized Photographs</li>
+                        <li>Parent's Identification and Residence Proof</li>
+                        <li>Bank Statement / Income Proof (for fee assessment)</li>
+                    </ul>
+                    <p class="note">Additional documents may be requested if required for specific admissions.</p>
+                </div>
+            </div>
+
+            <div class="admission-cta">
+                <h3>Ready to Apply?</h3>
+                <p>Start your journey with Prestige Academy today</p>
+                <button class="btn btn-primary btn-large" onclick="scrollToForm()">Begin Application</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <h2 class="section-title">Our Facilities</h2>
+            <p class="section-subtitle">State-of-the-art infrastructure for comprehensive learning</p>
+            
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">📚</div>
+                    <h3>Library</h3>
+                    <p>Well-stocked library with diverse collection of books supporting academics and student interest. A quiet space for reading, research, and intellectual exploration.</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">🔬</div>
+                    <h3>Science Lab</h3>
+                    <p>Equipped science laboratory for practical experiments in Physics, Chemistry, and Biology. Hands-on learning experiences reinforce classroom concepts.</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">🏫</div>
+                    <h3>Classrooms</h3>
+                    <p>Bright, well-maintained classrooms designed to foster a positive learning environment. Spaces equipped for interactive teaching methods.</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">🍽️</div>
+                    <h3>Cafeteria</h3>
+                    <p>Nutritious meals prepared with attention to health and hygiene. Providing quality food to support student energy and focus during school hours.</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">💬</div>
+                    <h3>Counseling Services</h3>
+                    <p>Professional counseling support for student development. Assistance with academic guidance, personal growth, and emotional well-being.</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">⚽</div>
+                    <h3>Sports Facilities</h3>
+                    <p>Outdoor space for physical activities and sports. Programs promoting fitness, teamwork, and healthy lifestyles aligned with holistic development.</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">💻</div>
+                    <h3>Computer Lab</h3>
+                    <p>Computer facilities for digital literacy and coding education. Preparing students with essential technology skills for modern education.</p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">🎯</div>
+                    <h3>Character Development</h3>
+                    <p>Comprehensive programs supporting our motto "Do Good, Be Good". Values education and ethical development woven through school activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title">Latest News & Events</h2>
+            <p class="section-subtitle">Stay updated with our latest happenings</p>
+            
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="date-day">🏆</span>
+                        <span class="date-month">Award</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Outstanding Award SEE 2080</h3>
+                        <p>Jugal School received Outstanding Award from PABSON Lalitpur for exceptional performance in Secondary Examination Exam 2080. A testament to our commitment to excellence.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">Mar</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Science Fair 2026</h3>
+                        <p>Annual Science Fair showcasing innovative projects by students. A platform to celebrate scientific curiosity and practical learning.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="date-day">22</span>
+                        <span class="date-month">Mar</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Sports Day & Community Event</h3>
+                        <p>Celebrate athletic excellence and sportsmanship through various sporting events. Students showcase skills and team spirit in a fun atmosphere.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="date-day">28</span>
+                        <span class="date-month">Mar</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Cultural Program</h3>
+                        <p>A vibrant celebration of Nepali culture through music, dance, and art. Students express creativity and celebrate our cultural heritage.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="date-day">05</span>
+                        <span class="date-month">Apr</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Parent-Teacher Conferences</h3>
+                        <p>Regular meetings to discuss student progress, performance, and holistic development. Building strong home-school partnership.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="date-day">12</span>
+                        <span class="date-month">Apr</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Educational Excursions</h3>
+                        <p>Field trips to enhance learning through real-world experiences. Students explore cultural sites and nature to deepen understanding.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-block">
+                        <h3>📍 Location</h3>
+                        <p>Jugal School<br>
+                        Dhapakhel-23, Lalitpur<br>
+                        Nepal</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>📞 Contact Us</h3>
+                        <p>Phone: <strong>+977 1-5275259</strong><br>
+                        Email: <strong>jugalschool12345@gmail.com</strong><br>
+                        Website: <strong><a href="https://juga.edu.np" target="_blank">https://juga.edu.np</a></strong></p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>⏰ Office Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 4:30 PM<br>
+                        Saturday: 9:00 AM - 1:00 PM<br>
+                        Sunday & Public Holidays: Closed</p>
+                    </div>
+
+                    <div class="info-block social">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Facebook">f</a>
+                            <a href="#" class="social-link" title="Twitter">𝕏</a>
+                            <a href="#" class="social-link" title="Instagram">📷</a>
+                            <a href="#" class="social-link" title="LinkedIn">in</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h3>Send us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <span class="error-msg" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <span class="error-msg" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="academics">Academic Program</option>
+                                <option value="facilities">Facilities</option>
+                                <option value="events">Events & News</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-msg" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <span class="error-msg" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        <p class="form-success" id="formSuccess" style="display:none;">Thank you for your message! We'll get back to you soon.</p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="map-container">
+                <iframe title="Jugal School Location - Dhapakhel-23, Lalitpur" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.7568799999996!2d85.3176!3d27.6626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sJugal%20School%20Lalitpur!5e0!3m2!1sen!2snp!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Jugal School</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#academics">Programs</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#news">News & Events</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Grievance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <p>Email: jugalschool12345@gmail.com</p>
+                    <p>Phone: +977 1-5275259</p>
+                    <p>Address: Dhapakhel-23<br>Lalitpur, Nepal</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jugal School. All rights reserved. | Motto: Do Good, Be Good</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
