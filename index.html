@@ -10,11 +10,26 @@
 <body>
     <!-- Navigation Header -->
     <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="contact-links">
+                        <a href="tel:+97715275259">📞 +977 1-5275259</a>
+                        <a href="mailto:jugalschool12345@gmail.com">✉️ jugalschool12345@gmail.com</a>
+                    </div>
+                    <div class="header-social">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">YT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
                     <img src="Jugal_Logo.jpg" alt="Jugal School Logo" class="logo-image">
-                    <!-- <span class="logo-text">Jugal School</span> -->
+                    <span class="logo-text">Jugal School</span>
                 </div>
                 <button class="hamburger" id="hamburger">
                     <span class="hamburger-line"></span>
@@ -37,9 +52,9 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Jugal School</h1>
-            <p class="hero-subtitle">Do Good, Be Good</p>
-            <p class="hero-description">Empowering students to achieve academic excellence and develop into responsible global citizens</p>
+            <p class="hero-pretitle">ESTABLISHED 1994 | PABSON AWARDED SCHOOL</p>
+            <h1 class="hero-title">Do Good. Be Good</h1>
+            <p class="hero-description">Empowering young minds through quality education, cultural values, and holistic development.</p>
             <div class="hero-buttons">
                 <button class="btn btn-primary" onclick="smoothScroll('#admissions')">Apply Now</button>
                 <button class="btn btn-secondary" onclick="smoothScroll('#about')">Learn More</button>
@@ -173,53 +188,45 @@
     <section id="admissions" class="admissions">
         <div class="container">
             <h2 class="section-title">Admissions</h2>
-            <p class="section-subtitle">Join our community of learners</p>
+            <p class="section-subtitle">We welcome students from Playgroup through Grade 11. Follow these simple steps to join our school community.</p>
             
-            <div class="admission-content">
-                <div class="admission-process">
-                    <h3>Admission Process</h3>
-                    <div class="process-steps">
-                        <div class="step">
-                            <div class="step-number">1</div>
-                            <div class="step-title">Application Form</div>
-                            <p>Submit the completed application form with supporting documents online or in person.</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">2</div>
-                            <div class="step-title">Assessment</div>
-                            <p>Qualifying students undergo entrance assessment in English, Mathematics, and Reasoning.</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">3</div>
-                            <div class="step-title">Interview</div>
-                            <p>Shortlisted candidates and parents participate in a personal interview with our admission team.</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">4</div>
-                            <div class="step-title">Selection Result</div>
-                            <p>Merit-based selection results are communicated to families with enrollment confirmation details.</p>
-                        </div>
-                    </div>
+            <div class="admission-grid">
+                <div class="admission-card">
+                    <div class="card-step">01</div>
+                    <h3>Inquiry</h3>
+                    <p>Visit our campus or contact us online to learn about our programs and curriculum.</p>
                 </div>
-
-                <div class="admission-requirements">
-                    <h3>Requirements</h3>
-                    <ul class="requirements-list">
-                        <li>Birth Certificate (attested copy)</li>
-                        <li>Previous Academic Record / Transfer Certificate</li>
-                        <li>Medical Certificate (updated immunization)</li>
-                        <li>Two Passport-sized Photographs</li>
-                        <li>Parent's Identification and Residence Proof</li>
-                        <li>Bank Statement / Income Proof (for fee assessment)</li>
-                    </ul>
-                    <p class="note">Additional documents may be requested if required for specific admissions.</p>
+                <div class="admission-card">
+                    <div class="card-step">02</div>
+                    <h3>Assessment</h3>
+                    <p>Students undergo a basic assessment of their academic levels and interests.</p>
+                </div>
+                <div class="admission-card">
+                    <div class="card-step">03</div>
+                    <h3>Interview</h3>
+                    <p>A friendly interaction with parents and students to understand academic goals.</p>
+                </div>
+                <div class="admission-card">
+                    <div class="card-step">04</div>
+                    <h3>Enrollment</h3>
+                    <p>Upon selection, complete the necessary documentation to secure admission.</p>
                 </div>
             </div>
 
             <div class="admission-cta">
-                <h3>Ready to Apply?</h3>
-                <p>Start your journey with Prestige Academy today</p>
-                <button class="btn btn-primary btn-large" onclick="scrollToForm()">Begin Application</button>
+                <p>Have questions? Our admissions team is here to help you every step of the way.</p>
+                <button class="btn btn-primary" onclick="smoothScroll('#contact')">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Award Banner -->
+    <section class="award-section">
+        <div class="container">
+            <div class="award-content">
+                <div class="award-icon">🏆</div>
+                <h2>Outstanding Award by PABSON Lalitpur</h2>
+                <p>Jugal School has been recognized for its exceptional performance and commitment to excellence in the Secondary Education Examination (SEE) 2080.</p>
             </div>
         </div>
     </section>
@@ -228,55 +235,38 @@
     <section id="facilities" class="facilities">
         <div class="container">
             <h2 class="section-title">Our Facilities</h2>
-            <p class="section-subtitle">State-of-the-art infrastructure for comprehensive learning</p>
+            <p class="section-subtitle">Modern infrastructure designed to support comprehensive academic and extra-curricular growth.</p>
             
             <div class="facilities-grid">
                 <div class="facility-card">
                     <div class="facility-icon">📚</div>
                     <h3>Library</h3>
-                    <p>Well-stocked library with diverse collection of books supporting academics and student interest. A quiet space for reading, research, and intellectual exploration.</p>
+                    <p>A quiet space with a diverse collection of books to foster research and a love for reading.</p>
                 </div>
-
                 <div class="facility-card">
                     <div class="facility-icon">🔬</div>
                     <h3>Science Lab</h3>
-                    <p>Equipped science laboratory for practical experiments in Physics, Chemistry, and Biology. Hands-on learning experiences reinforce classroom concepts.</p>
+                    <p>Fully equipped labs for Physics, Chemistry, and Biology to encourage hands-on learning.</p>
                 </div>
-
                 <div class="facility-card">
                     <div class="facility-icon">🏫</div>
-                    <h3>Classrooms</h3>
-                    <p>Bright, well-maintained classrooms designed to foster a positive learning environment. Spaces equipped for interactive teaching methods.</p>
+                    <h3>Smart Classrooms</h3>
+                    <p>Well-ventilated, bright classrooms equipped with modern teaching aids for interactive learning.</p>
                 </div>
-
-                <div class="facility-card">
-                    <div class="facility-icon">🍽️</div>
-                    <h3>Cafeteria</h3>
-                    <p>Nutritious meals prepared with attention to health and hygiene. Providing quality food to support student energy and focus during school hours.</p>
-                </div>
-
-                <div class="facility-card">
-                    <div class="facility-icon">💬</div>
-                    <h3>Counseling Services</h3>
-                    <p>Professional counseling support for student development. Assistance with academic guidance, personal growth, and emotional well-being.</p>
-                </div>
-
                 <div class="facility-card">
                     <div class="facility-icon">⚽</div>
-                    <h3>Sports Facilities</h3>
-                    <p>Outdoor space for physical activities and sports. Programs promoting fitness, teamwork, and healthy lifestyles aligned with holistic development.</p>
+                    <h3>Sports Grounds</h3>
+                    <p>Ample space for various sports including football, basketball, and table tennis.</p>
                 </div>
-
+                <div class="facility-card">
+                    <div class="facility-icon">🍽️</div>
+                    <h3>Hygienic Cafeteria</h3>
+                    <p>Providing nutritious and fresh meals prepared under strict hygiene standards.</p>
+                </div>
                 <div class="facility-card">
                     <div class="facility-icon">💻</div>
                     <h3>Computer Lab</h3>
-                    <p>Computer facilities for digital literacy and coding education. Preparing students with essential technology skills for modern education.</p>
-                </div>
-
-                <div class="facility-card">
-                    <div class="facility-icon">🎯</div>
-                    <h3>Character Development</h3>
-                    <p>Comprehensive programs supporting our motto "Do Good, Be Good". Values education and ethical development woven through school activities.</p>
+                    <p>High-speed internet and modern systems to build essential digital literacy skills.</p>
                 </div>
             </div>
         </div>
@@ -285,8 +275,8 @@
     <!-- News & Events Section -->
     <section id="news" class="news">
         <div class="container">
-            <h2 class="section-title">Latest News & Events</h2>
-            <p class="section-subtitle">Stay updated with our latest happenings</p>
+            <h2 class="section-title">News & Events</h2>
+            <p class="section-subtitle">Stay connected with the latest from Jugal School</p>
             
             <div class="news-grid">
                 <div class="news-card">
@@ -296,7 +286,7 @@
                     </div>
                     <div class="news-content">
                         <h3>Outstanding Award SEE 2080</h3>
-                        <p>Jugal School received Outstanding Award from PABSON Lalitpur for exceptional performance in Secondary Examination Exam 2080. A testament to our commitment to excellence.</p>
+                        <p>Recognized by PABSON Lalitpur for exceptional SEE performance — a proud moment for our school community.</p>
                         <a href="#" class="read-more">Read More →</a>
                     </div>
                 </div>
@@ -307,8 +297,8 @@
                         <span class="date-month">Mar</span>
                     </div>
                     <div class="news-content">
-                        <h3>Science Fair 2026</h3>
-                        <p>Annual Science Fair showcasing innovative projects by students. A platform to celebrate scientific curiosity and practical learning.</p>
+                        <h3>Annual Science Fair 2026</h3>
+                        <p>Students showcased innovative projects bridging classroom learning with real-world science applications.</p>
                         <a href="#" class="read-more">Read More →</a>
                     </div>
                 </div>
@@ -319,47 +309,23 @@
                         <span class="date-month">Mar</span>
                     </div>
                     <div class="news-content">
-                        <h3>Sports Day & Community Event</h3>
-                        <p>Celebrate athletic excellence and sportsmanship through various sporting events. Students showcase skills and team spirit in a fun atmosphere.</p>
+                        <h3>Sports Day & Cultural Program</h3>
+                        <p>A celebration of athletic excellence and cultural heritage through sports events, music, and dance performances.</p>
                         <a href="#" class="read-more">Read More →</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="news-card">
-                    <div class="news-date">
-                        <span class="date-day">28</span>
-                        <span class="date-month">Mar</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>Cultural Program</h3>
-                        <p>A vibrant celebration of Nepali culture through music, dance, and art. Students express creativity and celebrate our cultural heritage.</p>
-                        <a href="#" class="read-more">Read More →</a>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <div class="news-date">
-                        <span class="date-day">05</span>
-                        <span class="date-month">Apr</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>Parent-Teacher Conferences</h3>
-                        <p>Regular meetings to discuss student progress, performance, and holistic development. Building strong home-school partnership.</p>
-                        <a href="#" class="read-more">Read More →</a>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <div class="news-date">
-                        <span class="date-day">12</span>
-                        <span class="date-month">Apr</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>Educational Excursions</h3>
-                        <p>Field trips to enhance learning through real-world experiences. Students explore cultural sites and nature to deepen understanding.</p>
-                        <a href="#" class="read-more">Read More →</a>
-                    </div>
-                </div>
+    <!-- CTA Banner -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Begin Your Child's Journey Today</h2>
+            <p>We invite parents and students to visit our campus and discover what makes Jugal School special.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="smoothScroll('#contact')">Contact Us</button>
+                <button class="btn btn-secondary-dark" onclick="smoothScroll('#admissions')">View Admissions</button>
             </div>
         </div>
     </section>
@@ -396,8 +362,7 @@
                     <div class="info-block social">
                         <h3>Follow Us</h3>
                         <div class="social-links">
-                            <a href="#" class="social-link" title="Facebook">f</a>
-                            <a href="#" class="social-link" title="Twitter">𝕏</a>
+                            <a href="https://www.facebook.com/profile.php?id=100062858808270" class="social-link" title="Facebook">f</a>
                             <a href="#" class="social-link" title="Instagram">📷</a>
                             <a href="#" class="social-link" title="LinkedIn">in</a>
                         </div>
