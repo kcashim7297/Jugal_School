@@ -163,11 +163,9 @@ function validateForm() {
     return isValid;
 }
 
-/**
- * Handle form submission
- */
+// ==================== Form Submission ==================== //
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         // Validate form
@@ -175,36 +173,64 @@ if (contactForm) {
             return;
         }
 
-        // Simulate form submission (since it's frontend only)
+        // Prepare for submission
         const submitButton = contactForm.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
+        const successMsg = document.getElementById('formSuccess');
+        const formData = new FormData(contactForm);
         
         // Disable button and show loading state
         submitButton.disabled = true;
-        submitButton.textContent = 'Sending...';
+        submitButton.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Sending...';
 
-        // Simulate delay
-        setTimeout(() => {
-            // Show success message
-            const successMsg = document.getElementById('formSuccess');
+        try {
+            // Real Formspree submission using fetch
+            const response = await fetch('https://formspree.io/f/xzdjklrb', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Show success message
+                if (successMsg) {
+                    successMsg.style.display = 'block';
+                    successMsg.textContent = "Thank you! Your message has been sent successfully.";
+                    successMsg.style.color = "var(--success)";
+                }
+
+                // Reset form
+                contactForm.reset();
+            } else {
+                const data = await response.json();
+                if (Object.hasOwn(data, 'errors')) {
+                    throw new Error(data["errors"].map(error => error["message"]).join(", "));
+                } else {
+                    throw new Error("Oops! There was a problem submitting your form");
+                }
+            }
+        } catch (error) {
+            // Show error message
             if (successMsg) {
                 successMsg.style.display = 'block';
+                successMsg.textContent = error.message;
+                successMsg.style.color = "var(--error)";
+                successMsg.style.backgroundColor = "#fee2e2";
             }
-
-            // Reset form
-            contactForm.reset();
-
+        } finally {
             // Reset button
             submitButton.disabled = false;
             submitButton.textContent = originalText;
 
-            // Hide success message after 5 seconds
+            // Hide success/error message after 5 seconds
             setTimeout(() => {
                 if (successMsg) {
                     successMsg.style.display = 'none';
                 }
             }, 5000);
-        }, 800);
+        }
     });
 
     // Clear error messages on input
