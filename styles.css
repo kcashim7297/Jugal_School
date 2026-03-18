@@ -161,6 +161,14 @@ a:hover {
 .contact-links a {
   color: var(--bg-white);
   transition: opacity var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-links a i {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
 }
 
 .contact-links a:hover {
@@ -174,6 +182,13 @@ a:hover {
 
 .header-social a {
   color: var(--bg-white);
+  font-size: 1rem;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.header-social a:hover {
+  color: var(--secondary-color);
+  transform: translateY(-2px);
 }
 
 .navbar {
@@ -508,8 +523,16 @@ a:hover {
 }
 
 .box-icon {
-  font-size: 1.75rem;
-  margin-bottom: 0.75rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  display: inline-block;
+  transition: transform var(--transition-base);
+}
+
+.mission-box:hover .box-icon,
+.vision-box:hover .box-icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .mission-box h3,
@@ -607,7 +630,15 @@ a:hover {
 
 .program-icon {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  display: inline-block;
+  transition: transform var(--transition-base);
+}
+
+.program-card:hover .program-icon {
+  transform: scale(1.1) translateY(-5px);
+  color: var(--secondary-color);
 }
 
 .program-card h3 {
@@ -638,11 +669,13 @@ a:hover {
 }
 
 .program-list li::before {
-  content: "\2713";
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
   position: absolute;
   left: 0;
   color: var(--success);
-  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .teaching-approach {
@@ -679,9 +712,16 @@ a:hover {
 }
 
 .approach-icon {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
   display: block;
+  color: var(--primary-color);
+  transition: transform var(--transition-base);
+}
+
+.approach-item:hover .approach-icon {
+  transform: scale(1.1);
+  color: var(--secondary-color);
 }
 
 .approach-item h4 {
@@ -794,9 +834,18 @@ a:hover {
 }
 
 .award-icon {
-  font-size: 4rem;
-  margin-bottom: var(--spacing-sm);
+  font-size: 4.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--secondary-color);
+  filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.4));
   animation: pulse 2s ease-in-out infinite;
+}
+
+.award-icon i {
+  background: linear-gradient(45deg, #f59e0b, #fbbf24);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes pulse {
@@ -849,14 +898,23 @@ a:hover {
 }
 
 .facility-icon {
-  font-size: 2rem;
+  font-size: 1.75rem;
   flex-shrink: 0;
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 1;
+  background-color: var(--bg-light);
+  color: var(--primary-color);
+  border-radius: 12px;
+  transition: all var(--transition-base);
+}
+
+.facility-card:hover .facility-icon {
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  transform: rotate(5deg);
 }
 
 .facility-info {
@@ -965,6 +1023,205 @@ a:hover {
   letter-spacing: 0.02em;
 }
 
+/* ==================== FACEBOOK FEED SECTION ==================== */
+.facebook-feed {
+    padding: 6rem 0;
+    background-color: var(--bg-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.facebook-feed::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+    z-index: 1;
+}
+
+.facebook-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.facebook-info .section-title {
+    text-align: left;
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.facebook-info .section-subtitle {
+    text-align: left;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+    font-size: 1.15rem;
+}
+
+.fb-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.fb-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fb-feature-item i {
+    width: 45px;
+    height: 45px;
+    background: var(--bg-white);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: var(--shadow-sm);
+    font-size: 1.25rem;
+}
+
+.fb-feature-item span {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.fb-feed-container {
+    background: var(--bg-white);
+    padding: 0;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-light);
+    width: 340px; /* Base width */
+    height: 400px; /* Shorter height to strictly cut off 2nd post */
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* More robust clipping of the scrollbar */
+.fb-feed-container iframe, 
+.fb-feed-container span, 
+.fb-feed-container .fb-page {
+    width: 365px !important; /* Push scrollbar way out */
+    height: 400px !important;
+    border: none;
+    overflow: hidden !important;
+}
+
+.fb-feed-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 10;
+    pointer-events: auto; /* Block all interaction (no scroll) */
+}
+
+@media (max-width: 992px) {
+    .facebook-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .facebook-info .section-title {
+        text-align: center;
+        font-size: 2.25rem;
+    }
+
+    .facebook-info .section-subtitle {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fb-features {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fb-feed-container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 340px; /* Keep it narrow enough for all mobile devices */
+        height: 400px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .facebook-feed {
+        padding: 4rem 0;
+    }
+
+    .facebook-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fb-features {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fb-feature-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+    }
+
+    .facebook-info .section-title {
+        font-size: 1.85rem;
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .facebook-info .btn-primary {
+        width: 100%;
+        display: block;
+    }
+
+    .facebook-info .section-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .fb-feed-container {
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        width: 340px;
+        height: 400px;
+        max-width: 95vw; /* Ensure it never overflows mobile viewport */
+    }
+
+    .fb-page {
+        width: 100% !important;
+    }
+}
+
 /* ==================== CTA SECTION ==================== */
 .cta-section {
   padding: 5rem 0;
@@ -1045,6 +1302,14 @@ a:hover {
   color: var(--primary-color);
   font-family: var(--font-primary);
   font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.info-block h3 i {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
 }
 
 .info-block p {
@@ -1076,8 +1341,13 @@ a:hover {
 
 .social-link:hover {
   background-color: var(--secondary-color);
-  transform: scale(1.15);
+  transform: scale(1.15) translateY(-3px);
   color: var(--bg-white);
+  box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
+}
+
+.social-link i {
+  font-size: 1.1rem;
 }
 
 .contact-form-wrapper {
